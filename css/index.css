@@ -5,7 +5,7 @@
 }
 .index .banner-content {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   overflow: hidden;
@@ -29,6 +29,22 @@
 }
 .index .banner-content-main .banner-left-img img {
   border-radius: 50px;
+}
+@media screen and (max-width: 767.98px) {
+  .index .banner-content-main .banner-left-img {
+    height: 180px;
+  }
+  .index .banner-content-main .banner-left-img img {
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 374.98px) {
+  .index .banner-content-main .banner-left-img {
+    height: 120px;
+  }
+  .index .banner-content-main .banner-left-img img {
+    border-radius: 15px;
+  }
 }
 .index .banner-content-main .banner-content-right {
   height: 100%;

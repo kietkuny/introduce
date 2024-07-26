@@ -4,7 +4,7 @@
     background-color: #1ca04c;
     &-content {
       position: relative;
-      height: 100vh;
+      height: 100%;
       width: 100%;
       display: flex;
       overflow: hidden;
@@ -26,6 +26,19 @@
           img{
             border-radius: 50px;
           }
+          @media screen and (max-width: 767.98px) {
+            height: 180px;
+            img{
+              border-radius: 20px;
+            }
+          }
+          @media screen and (max-width: 374.98px) {
+            height: 120px;
+            img{
+              border-radius: 15px;
+            }
+          }
+          
         }
         .banner-content-right {
           height: 100%;
@@ -53,6 +66,7 @@
       &-img {
         height: 100vh;
       }
+
     }
   }
   @media screen and (max-width: 767.98px) {
