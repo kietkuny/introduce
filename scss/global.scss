@@ -1,0 +1,135 @@
+header {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  transition: all 0.3s;
+  padding: 15px 0;
+  // background-color: #1CA04C;
+  // background-color: #51ae5d;
+  .header-link {
+    position: relative;
+    width: fit-content;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 3px;
+      bottom: -8px;
+      background-color: goldenrod;
+    }
+    &:hover {
+      transition: all 0.3s;
+      color: goldenrod;
+      &:before {
+        transition: all 0.3s;
+        width: 80%;
+      }
+    }
+  }
+  .nav-active {
+    color: goldenrod;
+    font-weight: bold;
+    position: relative;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 3px;
+      bottom: -8px;
+      background-color: goldenrod;
+    }
+  }
+  .menu-header {
+    width: 100%;
+    position: relative;
+    animation: rotateMenu 400ms ease-in-out forwards;
+    transform-origin: top center;
+    &-item {
+      list-style: none;
+      &-menu {
+        position: relative;
+        margin-right: 30px;
+      }
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    background: white;
+    padding: 10px 0;
+    .menu-header {
+      position: absolute;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      padding: 0 50px;
+      top: 80px;
+      padding-top: 20px;
+      background: #1ca04c;
+      &-close {
+        display: none;
+      }
+      &-item {
+        padding-left: 0;
+        li {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 479.98px) {
+    .menu-header {
+      padding: 0 20px;
+    }
+  }
+}
+.bar1,
+.bar2,
+.bar3,
+.bar4 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: all 0.4s ease-in-out;
+}
+.bar3 {
+  margin-top: -11px;
+}
+.hamburger-menu {
+  cursor: pointer;
+  height: 43px;
+}
+.change {
+  .bar1,
+  .bar4 {
+    display: none;
+    transition: all 0.4s ease-in-out;
+  }
+  .bar2 {
+    transition: all 0.4s ease-in-out;
+    transform: translate(0, 11px) rotate(45deg);
+  }
+  .bar3 {
+    transition: all 0.4s ease-in-out;
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+}
+@keyframes rotateMenu {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  70% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+a {
+  text-decoration: none !important;
+}

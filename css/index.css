@@ -1,0 +1,92 @@
+@charset "UTF-8";
+.index .banner {
+  height: 100vh;
+  background-color: #1ca04c;
+}
+.index .banner-content {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.index .banner-content-main {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+.index .banner-content-main .banner-content-left {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.index .banner-content-main .banner-left-img {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+}
+.index .banner-content-main .banner-left-img img {
+  border-radius: 50px;
+}
+.index .banner-content-main .banner-content-right {
+  height: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.index .banner-content-main .banner-content-right h1,
+.index .banner-content-main .banner-content-right h2 {
+  overflow: hidden; /* Ẩn văn bản khi bắt đầu */
+  border-right: 0.15em solid orange; /* Hiển thị dấu nháy đang gõ */
+  white-space: nowrap; /* Ngăn văn bản xuống dòng */
+  margin: 0 auto; /* Canh giữa */
+  animation: typing 1.75s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+.index .banner-content-main img {
+  height: 100%;
+  object-fit: cover;
+}
+.index .banner-content-img {
+  height: 100vh;
+}
+@media screen and (max-width: 767.98px) {
+  .index main {
+    margin-top: 70px;
+  }
+  .index .banner {
+    height: 60vh;
+  }
+  .index .banner-content-img {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 374.98px) {
+  .index .banner {
+    height: 50vh;
+  }
+  .index .banner-content-img {
+    height: 50vh;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+/* Hiệu ứng con trỏ typewriter */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}/*# sourceMappingURL=index.css.map */
