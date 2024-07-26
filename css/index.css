@@ -38,6 +38,14 @@
     border-radius: 20px;
   }
 }
+@media screen and (max-width: 570.98px) {
+  .index .banner-content-main .banner-left-img {
+    height: 160px;
+  }
+  .index .banner-content-main .banner-left-img img {
+    border-radius: 20px;
+  }
+}
 @media screen and (max-width: 374.98px) {
   .index .banner-content-main .banner-left-img {
     height: 120px;
