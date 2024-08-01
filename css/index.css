@@ -62,14 +62,6 @@
   align-items: center;
   justify-content: center;
 }
-.index .banner-content-main .banner-content-right h1,
-.index .banner-content-main .banner-content-right h2 {
-  overflow: hidden; /* Ẩn văn bản khi bắt đầu */
-  border-right: 0.15em solid orange; /* Hiển thị dấu nháy đang gõ */
-  white-space: nowrap; /* Ngăn văn bản xuống dòng */
-  margin: 0 auto; /* Canh giữa */
-  animation: typing 1.75s steps(30, end), blink-caret 0.75s step-end infinite;
-}
 .index .banner-content-main img {
   height: 100%;
   object-fit: cover;
