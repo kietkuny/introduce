@@ -98,6 +98,25 @@
       }
     }
   }
+  .info{
+    overflow-x: hidden;
+    h3{
+      color: #1ca04c;
+      font-weight: bold;
+    }
+    th,td{
+      font-size: large;
+      padding: 8px 0;
+      @media screen and (max-width: 767.98px) {
+        font-size: medium;
+        padding: 4px 0;
+      }
+      
+    }
+    img{
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
 }
 
 @keyframes typing {
