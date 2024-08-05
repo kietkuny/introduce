@@ -48,7 +48,7 @@
 }
 @media screen and (max-width: 374.98px) {
   .index .banner-content-main .banner-left-img {
-    height: 140px;
+    height: 160px;
   }
   .index .banner-content-main .banner-left-img img {
     border-radius: 15px;
@@ -74,18 +74,18 @@
     margin-top: 70px;
   }
   .index .banner {
-    height: 60vh;
+    height: 80vh;
   }
   .index .banner-content-img {
-    height: 60vh;
+    height: 80vh;
   }
 }
 @media screen and (max-width: 374.98px) {
   .index .banner {
-    height: 50vh;
+    height: 60vh;
   }
   .index .banner-content-img {
-    height: 50vh;
+    height: 60vh;
   }
 }
 .index .info {
