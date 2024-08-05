@@ -10,16 +10,16 @@ $(`.hamburger-menu`).on("click", function () {
   $(`.hamburger-menu`).toggleClass('change');
   $(`.menu-header`).toggleClass('menu-header-close');
 })
-$(window).on('load', function(){
-  $('.banner-content-left').slick({
-    dots: false,
-    arrows: false,
-    fade: true,
-    autoplay: true,
-    pauseOnFocus: false,
-    loop: true,
-    autoplaySpeed: 2000,
-  });
-})
+// $(window).on('load', function(){
+//   $('.banner-content-left').slick({
+//     dots: false,
+//     arrows: false,
+//     fade: true,
+//     autoplay: true,
+//     pauseOnFocus: false,
+//     loop: true,
+//     autoplaySpeed: 2000,
+//   });
+// })
 
 		
