@@ -23,11 +23,11 @@ header {
       width: 0;
       height: 3px;
       bottom: -8px;
-      background-color: goldenrod;
+      background-color: #7ED7C1;
     }
     &:hover {
       transition: all 0.3s;
-      color: goldenrod;
+      color: #7ED7C1;
       &:before {
         transition: all 0.3s;
         width: 80%;
@@ -35,7 +35,7 @@ header {
     }
   }
   .nav-active {
-    color: goldenrod;
+    color: #7ED7C1;
     font-weight: bold;
     position: relative;
     width: fit-content;
@@ -47,7 +47,7 @@ header {
       width: 100%;
       height: 3px;
       bottom: -8px;
-      background-color: goldenrod;
+      background-color: #7ED7C1;
     }
   }
   .menu-header {
@@ -74,7 +74,7 @@ header {
       padding: 0 50px;
       top: 70px;
       padding-top: 20px;
-      background: #1ca04c;
+      background: linear-gradient( to right, #41B06E, #37B5B6);
       &-close {
         display: none;
       }

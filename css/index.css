@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .index .banner {
   height: 100vh;
-  background-color: #1ca04c;
+  background: linear-gradient(to right, #41b06e, #37b5b6);
 }
 .index .banner-content {
   position: relative;
@@ -92,15 +92,19 @@
   overflow-x: hidden;
 }
 .index .info h3 {
-  color: #1ca04c;
+  background: -webkit-linear-gradient(#41b06e, #37b5b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
-.index .info th, .index .info td {
+.index .info th,
+.index .info td {
   font-size: large;
   padding: 8px 0;
 }
 @media screen and (max-width: 767.98px) {
-  .index .info th, .index .info td {
+  .index .info th,
+  .index .info td {
     font-size: medium;
     padding: 4px 0;
   }
