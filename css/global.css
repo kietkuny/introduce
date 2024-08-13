@@ -2,10 +2,17 @@ a {
   text-decoration: none !important;
 }
 
+.text-gradient {
+  background: -webkit-linear-gradient(#41b06e, #37b5b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
 header {
   position: fixed;
   top: 0;
-  z-index: 9999;
+  z-index: 1;
   transition: all 0.3s;
   padding: 15px 0;
 }

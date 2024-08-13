@@ -26,15 +26,15 @@
 </head>
 
 <body class="donate">
-  
+
   <!-- Giao diện -->
-  
+
   <header class="w-100">
     <div class="container">
       <nav class="header-menu d-flex justify-content-between align-items-center">
         <a href="/introduce" class="nav-link d-flex align-items-center header-menu-logo">
-          <div><img src="./img/Logo.svg" alt="Logo" class="object-fit-cover" alt="Logo" width="120px"
-            height="50px"> </div>
+          <div><img src="./img/Logo.svg" alt="Logo" class="object-fit-cover" alt="Logo" width="120px" height="50px">
+          </div>
         </a>
         <div class="d-md-none d-block hamburger-menu">
           <div class="bar1"></div>
@@ -62,21 +62,65 @@
         <div data-aos="fade-up">
           <h2>🤑 Bảo trợ cái bụng đói của tui nào! 🤑</h2>
           <p>Này bạn,</p>
-          <p>Nếu bạn không muốn thấy tui ngồi gặm bánh mì khô cả ngày, hãy ủng hộ chút đỉnh để tui có thể ăn mỳ tôm! Một gói mỳ tôm từ bạn có thể là bữa ăn cả tuần của tui đó!</p>
-          <p>Đùa thôi, nhưng thực sự mọi sự đóng góp của bạn sẽ giúp tui tiếp tục tạo ra những điều tuyệt vời. Bạn có thể xem đó là đầu tư vào... sự vui vẻ và sáng tạo của tui!
+          <p>Nếu bạn không muốn thấy tui ngồi gặm bánh mì khô cả ngày, hãy ủng hộ chút đỉnh để tui có thể ăn mỳ tôm! Một
+            gói mỳ tôm từ bạn có thể là bữa ăn cả tuần của tui đó!</p>
+          <p>Đùa thôi, nhưng thực sự mọi sự đóng góp của bạn sẽ giúp tui tiếp tục tạo ra những điều tuyệt vời. Bạn có
+            thể xem đó là đầu tư vào... sự vui vẻ và sáng tạo của tui!
           </p>
           <p>Cảm ơn bạn rất nhiều! Bạn đúng là người hùng trong mắt tui đấy!</p>
-          <div class="row d-md-flex justify-content-center">
-            <div class="col-md-5 p-5">
-              <img src="./img/donate/z5675331419692_b47aa56374b5e38acc0ec21267372271.jpg" alt="momo" loading="lazy" width="100%">
+          <div class="row d-md-flex justify-content-center my-3">
+            <div class="col-md-5 px-5">
+              <h3>SĐT: <span class="text-gradient" id="sdtmomo">0913847561</span> <button class="btn btn-outline-info"
+                  id="copyMomo"><i class="fa-light fa-copy"></i></button></h3>
+              <img src="./img/donate/z5675331419692_b47aa56374b5e38acc0ec21267372271.jpg" alt="momo" loading="lazy"
+                width="100%">
+
+              <!-- Bootstrap Modal -->
+
             </div>
-            <div class="col-md-5 p-5">
-              <img src="./img/donate/z5675331421066_4160862209c9aaa0e7738ab61232e1f3.jpg" alt="vietcombank" loading="lazy" width="100%">
+            <div class="col-md-5 px-5">
+              <h3>STK: <span class="text-gradient" id="stkvietcom">1027019780</span> <button
+                  class="btn btn-outline-info" id="copyVietcom"><i class="fa-light fa-copy"></i></button></h3>
+              </h3>
+              <img src="./img/donate/z5675331421066_4160862209c9aaa0e7738ab61232e1f3.jpg" alt="vietcombank"
+                loading="lazy" width="100%">
             </div>
           </div>
         </div>
       </div>
     </section>
+    <div class="modal fade" id="copyModalMomo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Đã sao chép: <span class="text-gradient" id="copiedMomo"></span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="copyModalVietcom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Đã sao chép: <span class="text-gradient" id="copiedVietcom"></span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
     <div class="new_footer_area bg_color">
@@ -109,7 +153,7 @@
         vào đi, không mất acc đâu</a></div>
     <div>Pass là ngày sinh của chính chủ (8 ký tự)</div>
   </div> -->
-  
+
   <!-- Trog cuộc sốg, ta k thật sự cần lời khuyên từ ng khác. Họ k thể hiểu, cho đến lúc mình tự trải qua. -->
   <!-- Script -->
   <script src="./js/bootstrap.bundle.min.js"></script>
