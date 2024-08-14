@@ -1,9 +1,9 @@
-$(window).on('scroll', function() {
+$(window).on('scroll', function () {
   let header = $('header');
   if ($(this).scrollTop() > 0) {
-      header.addClass('bg-body-tertiary border-bottom border-dark ');
+    header.addClass('bg-body-tertiary border-bottom border-dark ');
   } else {
-      header.removeClass('bg-body-tertiary border-bottom border-dark');
+    header.removeClass('bg-body-tertiary border-bottom border-dark');
   }
 });
 $(`.hamburger-menu`).on("click", function () {
@@ -11,7 +11,7 @@ $(`.hamburger-menu`).on("click", function () {
   $(`.menu-header`).toggleClass('menu-header-close');
 })
 
-$("#copyMomo").click(function(){
+$("#copyMomo").click(function () {
   // Lấy nội dung từ thẻ p
   let text = $("#sdtmomo").text();
 
@@ -19,10 +19,10 @@ $("#copyMomo").click(function(){
   let tempInput = $("<input>");
   $("main").append(tempInput);
   tempInput.val(text).select();
-  
+
   // Thực hiện lệnh sao chép
   document.execCommand("copy");
-  
+
   // Xóa phần tử input tạm thời
   tempInput.remove();
 
@@ -30,7 +30,7 @@ $("#copyMomo").click(function(){
   $("#copiedMomo").text(text);
   $("#copyModalMomo").modal('show');
 });
-$("#copyVietcom").click(function(){
+$("#copyVietcom").click(function () {
   // Lấy nội dung từ thẻ p
   let text = $("#stkvietcom").text();
 
@@ -38,10 +38,10 @@ $("#copyVietcom").click(function(){
   let tempInput = $("<input>");
   $("main").append(tempInput);
   tempInput.val(text).select();
-  
+
   // Thực hiện lệnh sao chép
   document.execCommand("copy");
-  
+
   // Xóa phần tử input tạm thời
   tempInput.remove();
 
@@ -61,4 +61,29 @@ $("#copyVietcom").click(function(){
 //   });
 // })
 
-		
+let sections = document.querySelectorAll("section");
+let currentSection = 0;
+let isScrolling = false;
+
+window.addEventListener("wheel", function (event) {
+  if (isScrolling) return; // Ngăn việc cuộn liên tục
+  isScrolling = true;
+
+  if (event.deltaY > 0) {
+    // Cuộn xuống
+    if (currentSection < sections.length - 1) {
+      currentSection++;
+    }
+  } else {
+    // Cuộn lên
+    if (currentSection > 0) {
+      currentSection--;
+    }
+  }
+
+  sections[currentSection].scrollIntoView({ behavior: 'smooth' });
+
+  setTimeout(() => {
+    isScrolling = false;
+  }, 800); // Thời gian chờ để tránh cuộn liên tục
+});

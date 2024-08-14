@@ -17,7 +17,7 @@ a {
 header {
   position: fixed;
   top: 0;
-  z-index: 9999;
+  z-index: 1;
   transition: all 0.3s;
   padding: 15px 0;
 }
@@ -304,25 +304,6 @@ footer .new_footer_top .footer_bg .footer_bg_two {
 }
 .index .banner-content-img {
   height: 100vh;
-}
-@media screen and (max-width: 767.98px) {
-  .index main {
-    margin-top: 70px;
-  }
-  .index .banner {
-    height: 80vh;
-  }
-  .index .banner-content-img {
-    height: 80vh;
-  }
-}
-@media screen and (max-width: 374.98px) {
-  .index .banner {
-    height: 60vh;
-  }
-  .index .banner-content-img {
-    height: 60vh;
-  }
 }
 .index .info {
   overflow-x: hidden;
