@@ -1,8 +1,10 @@
 .index {
-  section{
+  section {
     height: 100vh;
     display: flex;
     align-items: center;
+    // scroll-snap-align: start;
+    // transition: transform 4s ease-in-out;
   }
   .banner {
     height: 100vh;
@@ -44,7 +46,7 @@
               border-radius: 20px;
             }
           }
-          @media screen and (max-width: 410.98px) {
+          @media screen and (max-width: 390.98px) {
             height: 100px;
             img {
               border-radius: 15px;
